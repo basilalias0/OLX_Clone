@@ -1,0 +1,74 @@
+.footBanner{
+    width: 100%;
+    height: 13rem;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 2.5rem;
+    font-family: Arial,Helvetica,sans-serif;
+    display: flex;
+}
+
+.footBanner .footIntro{
+    width: 49.9%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.footBanner .footIntro .head{
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+}
+.footBanner .footIntro .description{
+    padding-left: 3rem;
+    font-size: 1.2rem;
+}
+
+.footBanner .footLine{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.footBanner .footLink{
+    width: 49.9%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footBanner .footLink .head{
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+}
+.footBanner .footLink button{
+    
+    margin: 0 2rem;
+    cursor: pointer;
+    border: 0;
+    width: 4rem;
+    border-radius: 5px;
+    height: 4rem;
+}
+
+.btn1{
+    background-image: url(./logoAndPics/app-store-ios.svg);
+    background-size: cover; 
+    background-position: center;
+    background-size: 4rem; 
+}
+.btn2{
+    background-image: url(./logoAndPics/google-play.svg);
+    background-size: cover; 
+    background-position: center;
+    background-size: 4rem;
+}
+

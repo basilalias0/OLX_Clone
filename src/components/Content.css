@@ -1,0 +1,65 @@
+
+.contain{
+    width: 100%;
+    margin-bottom: 1rem;
+    
+}
+.contain .containHead{
+    padding-top: 1rem;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: larger;
+    margin-bottom: 1rem;
+
+}
+.contain .cards{
+    height: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contain .cards .card{
+    height: 15rem;
+    background-color: white;
+    width: 12rem;
+    margin-left: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contain .cards .card .proPic{
+    margin: .5rem;
+    width: 11rem;
+    height: 8rem;
+    background-color: red;
+
+}
+.contain .cards .card .proPrice{
+    margin-left: .2rem;
+    font-size: larger;
+    font-weight: bold;
+}
+.contain .cards .card .proTitle{
+    margin-left: .2rem;
+    padding-top: 2px;
+    font-family: Arial,Helvetica,sans-serif;
+    color: gray;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+}
+.contain .cards .card .proFooter{
+    display: flex;
+    color: gray;
+    font-size: .75rem;
+    margin: auto .2rem 0 .2rem;
+    padding-bottom: .5rem;
+    
+    
+}
+.contain .cards .card .proFooter .proLocation{
+    margin-right: .5rem;
+}
+.contain .cards .card .proFooter .proDate{
+    margin-left: .5rem;
+}

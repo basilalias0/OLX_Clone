@@ -1,0 +1,90 @@
+.overlayPage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.overlay{
+    width: 30rem;
+    height: 24rem;
+    background-color: white;
+    opacity: 1;
+    border-radius: 10px;
+    
+}
+
+.overlay .overlayHeader{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.olxLogo{
+    margin-left: 11rem;
+    margin-top: 2rem;
+    
+}
+
+.olxLogo img{
+    width: 7rem;
+    
+}
+
+.closeBar button{
+    background-image: url(./logoAndPics/xmark-solid.svg);
+    background-size: cover; 
+    background-position: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 9rem;
+    
+}
+.signUpForm{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    width: 90%;
+    height: 2rem;
+    margin-left: 1.4rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+form input:focus{
+    border: 1px solid red;
+}
+form .btns{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+form button{
+    padding: .75rem;
+    margin: .5rem 2rem;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+
+form button:hover{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+
+}
