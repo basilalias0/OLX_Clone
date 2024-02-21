@@ -11,7 +11,7 @@
     box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 }
 .logo img{
-    width: 5.5rem;
+    width: 4rem;
     height: 2rem;
     margin-top: 1rem;
     margin-left: .5rem;
@@ -19,7 +19,7 @@
 
 .searchbar{
     background-color: white;
-    width: 60%;
+    width: 50%;
     height: 2rem;
     display: flex;
     margin-left: .5rem;
@@ -47,6 +47,16 @@
 .searchbar input:focus{
     outline: none;
 }
+
+.username{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+    color: #002f34;
+
+}
+
 .logAndName{
     margin-top: 1.5rem;
     margin-left: .5rem;
@@ -76,7 +86,8 @@
     font-weight: bold;
     background-color: white;
     cursor: pointer;
-    border: 5px solid teal;
+    border: 5px solid #002f34;
+    ;
     border-radius: 15px;
     
 }

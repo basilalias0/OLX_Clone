@@ -51,6 +51,22 @@
     display: flex;
     flex-direction: column;
 }
+.formTitle{
+    color: #6c99ff;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 7rem;
+    margin-bottom: .95rem;
+
+
+}
+.cardTitle{
+    color: #6c99ff;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 7.5rem;
+    margin-bottom: .95rem;
+}
 
 form input{
     width: 90%;
@@ -72,7 +88,8 @@ form .btns{
 
 form button{
     padding: .75rem;
-    margin: .5rem 2rem;
+    margin: -.5rem 2rem;
+    width: 7rem;
     cursor: pointer;
     border: 1px solid black;
     background-color: white;
@@ -83,6 +100,31 @@ form button{
 }
 
 form button:hover{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+
+}
+
+.logOutBtns{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+.logOutBtns button{
+    padding: .75rem;
+    margin: -.5rem 2rem;
+    width: 6rem;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+
+.logOutBtns button:hover{
     border: 1px solid white;
     background-color: black;
     color: white;
