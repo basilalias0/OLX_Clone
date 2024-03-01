@@ -4,11 +4,13 @@ import {auth} from '../Firebase/config'
 import React, { useContext,useState } from 'react';
 import {authContext} from '../Store/Context'
 import LoadingSpinner from './LoadingSpinner';
+import { useNavigate } from 'react-router-dom';
 
 function LogOutOverlay(props) {
 
   const user = useContext(authContext)
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate()
 
   
 
@@ -19,6 +21,7 @@ function LogOutOverlay(props) {
     auth.signOut().then(() => {
       setIsLoading(false) 
       props.setTrigger(false)
+      navigate('/')
       console.log("Logout completed")
       console.log(user)
       

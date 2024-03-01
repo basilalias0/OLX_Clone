@@ -5,12 +5,27 @@ import sLogo from'./logoAndPics/magnifying-glass-solid.svg'
 import {useState} from 'react'
 import LoginOverlay from './LoginOverlay';
 import LogOutOverlay from './LogOutOverlay';
-import {authContext} from '../Store/Context'
+import {authContext} from '../Store/Context';
+import {useNavigate} from 'react-router-dom'
 
 function Navbar() {
 
+  const navigate = useNavigate()
+
+  const navToSell =()=>{
+    navigate('/sellyourthing')
+  }
+
+ 
+
   const [popup,setPopup] = useState(false)
   const {user} = useContext(authContext) 
+
+  const alertSlider =()=>{
+    alert("Please log in before u sell your item")
+    
+  }
+
 
 
 
@@ -39,7 +54,7 @@ function Navbar() {
         {(user) ? `Log out`:"LogIn/SignUp"
         }
           </button></div>
-        <div className='sellBtn'><button>+ SELL</button></div>
+        <div className='sellBtn'><button onClick={(user)? navToSell :alertSlider}>+ SELL</button></div>
       </div>
       <div className='bottomSpace'></div>
 
