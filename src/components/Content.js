@@ -33,7 +33,7 @@ function Content() {
           return(
           <div className='card'>
           <div className='proPic'><img src={product.url} alt='image not found'></img></div>
-          <div className='proPrice'>₹ {product.price}</div>
+          <div className='proPrice'>₹{product.price} </div>
           <div className='proTitle'>{product.adTitle}</div>
           <div className='proFooter'>
             <div className='proLocation'>{product.state}</div>

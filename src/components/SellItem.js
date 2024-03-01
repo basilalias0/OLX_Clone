@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer';
-import './SellItems.css'
+import './SellItem.css'
 import { authContext } from '../Store/Context';
 import { useContext } from 'react';
 import { db, storage } from '../Firebase/config';
 import { useNavigate } from 'react-router-dom';
 
-function SellItems() {
+function SellItem() {
 
   const {user} = useContext(authContext)
 
@@ -58,13 +56,8 @@ storage.ref(`/images/${image.name}`).put(image).then(({ref}) => {
 
 
   }
-
-  
-
-
   return (
     <div>
-      <Navbar/>
       <div className='formContainer'>
         <div className='formBody'>
             <form onSubmit={handleSubmit}>
@@ -114,9 +107,9 @@ storage.ref(`/images/${image.name}`).put(image).then(({ref}) => {
             </form>
         </div>
       </div>
-      <Footer/>
+      
     </div>
   );
 }
 
-export default SellItems;
+export default SellItem;
