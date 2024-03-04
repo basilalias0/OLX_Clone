@@ -41,10 +41,11 @@ storage.ref(`/images/${image.name}`).put(image).then(({ref}) => {
           price,
           url,
           userID : user.uid,
+          mail: user.email,
           state,
           district,
           locality,
-          conNum,
+          ContactNumber:conNum,
           createdDate : `${day} ${month}`
 
 
@@ -64,7 +65,7 @@ storage.ref(`/images/${image.name}`).put(image).then(({ref}) => {
                 <div className='section'>
                 <h3>INCLUDE SOME DETAILS</h3>
                 <input type='text' placeholder='Brand*' value={brand} onChange={(e)=>{setBrand(e.target.value)}} required></input>
-                <input type='number' placeholder='Year' value={year} onChange={(e)=>{setYear(e.target.value)}} required></input>
+                <input type='number' placeholder='Year of Registration' value={year} onChange={(e)=>{setYear(e.target.value)}} required></input>
                 <input type='text' placeholder='Kilometer Driven*' value={KMDriven} onChange={(e)=>{setKMDriven(e.target.value)}} required></input>
                 <input type='text' placeholder='Ad Title*' value={adTitle} onChange={(e)=>{setAdTitle(e.target.value)}} required></input>
                 <input type='text' placeholder='Description*' value={description} onChange={(e)=>setDescription(e.target.value)} required></input>
