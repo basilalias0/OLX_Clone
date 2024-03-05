@@ -11,9 +11,18 @@
     grid-row-start: 1;
     grid-row-end: 4;
     height: 25rem;
-    background-color: red;
     border-radius: 5px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
+    
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 .priceAndTitle{
     border-radius: 5px;

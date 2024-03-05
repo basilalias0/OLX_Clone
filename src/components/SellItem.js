@@ -4,6 +4,7 @@ import { authContext } from '../Store/Context';
 import { useContext } from 'react';
 import { db, storage } from '../Firebase/config';
 import { useNavigate } from 'react-router-dom';
+import { Container } from '@mui/material';
 
 function SellItem() {
 
@@ -40,12 +41,12 @@ storage.ref(`/images/${image.name}`).put(image).then(({ref}) => {
           description,
           price,
           url,
-          userID : user.uid,
+          sellerName: user.displayName,
           mail: user.email,
           state,
           district,
           locality,
-          ContactNumber:conNum,
+          contactNumber:conNum,
           createdDate : `${day} ${month}`
 
 
@@ -59,6 +60,7 @@ storage.ref(`/images/${image.name}`).put(image).then(({ref}) => {
   }
   return (
     <div>
+      <Container>
       <div className='formContainer'>
         <div className='formBody'>
             <form onSubmit={handleSubmit}>
@@ -108,7 +110,7 @@ storage.ref(`/images/${image.name}`).put(image).then(({ref}) => {
             </form>
         </div>
       </div>
-      
+      </Container>
     </div>
   );
 }

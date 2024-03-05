@@ -3,6 +3,7 @@
     width: 100%;
     margin-bottom: 1rem;
     
+    
 }
 .contain .containHead{
     padding-top: 1rem;
@@ -12,7 +13,8 @@
 
 }
 .contain .cards{
-    height: 15rem;
+    height: 60vh;
+    overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -33,7 +35,8 @@
     margin: .5rem;
     width: 11rem;
     height: 8rem;
-    background-color: #111;
+    object-fit: contain;
+    background-color: white;
 
 }
 .contain .cards .card .proPrice{

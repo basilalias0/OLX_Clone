@@ -7,9 +7,13 @@ import { Context } from './Store/Context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <Context>
+  
       <App />
+      
   </Context>
+  
      
    
   

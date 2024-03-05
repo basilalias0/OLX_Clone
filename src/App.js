@@ -6,6 +6,7 @@ import {auth} from './Firebase/config'
 import { authContext } from './Store/Context';
 import SellPage from './Pages/SellPage';
 import ViewPage from './Pages/ViewPage';
+import PostContext from './Store/PostContext';
 
 
 
@@ -20,6 +21,7 @@ function App() {
   })
   return (
     <div>
+      <PostContext>
       <Router>
         <Routes>
           <Route path='/' element={<Home/>} />
@@ -28,6 +30,7 @@ function App() {
         </Routes>
 
       </Router>
+      </PostContext>
       
       
     </div>
